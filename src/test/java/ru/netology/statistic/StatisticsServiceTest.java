@@ -14,4 +14,12 @@ class StatisticsServiceTest {
     long expected = 0;
     long actual = service.findMax(incomesInBillions);
   }
+
+  @Test
+  void findMaxLast() {
+    StatisticsService service = new StatisticsService();
+    long[] incomesInBillions = {1,2,3,4,5};
+    long expected = 4;
+    long actual = service.findMax(incomesInBillions);
+  }
 }
